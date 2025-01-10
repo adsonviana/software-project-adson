@@ -1,3 +1,5 @@
+#Arquivo com características dos robôs
+
 from utils.ssl.Navigation import Navigation
 from utils.ssl.base_agent import BaseAgent
 

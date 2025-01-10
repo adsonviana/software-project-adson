@@ -1,3 +1,5 @@
+#Arquivo sobre atribuição de tarefas para os robôs
+
 from rsoccer_gym.Entities import Robot
 from utils.ssl.Navigation import Navigation
 from utils.Point import Point

@@ -1,3 +1,5 @@
+#Arquivo com código que começa e que para o jogo
+
 import gymnasium as gym
 import rsoccer_gym
 from gymnasium.envs.registration import register

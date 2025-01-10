@@ -1,3 +1,5 @@
+#Arquivo com código sobre funcionamento do jogo
+
 import numpy as np
 from gymnasium.spaces import Box
 from rsoccer_gym.Entities import Ball, Frame, Robot
