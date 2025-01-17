@@ -1,10 +1,10 @@
 #Arquivo sobre atribuição de tarefas para os robôs
 
 from rsoccer_gym.Entities import Robot
-from utils.ssl.Navigation import Navigation
-from utils.Point import Point
-from utils.ssl.base_agent import BaseAgent
-import random
+from utils.ssl.Navigation import Navigation #Importando a classe 'Navegation' do arquivo 'Navegation'
+from utils.Point import Point #Importando a classe 'Point' do arquivo 'Point'
+from utils.ssl.base_agent import BaseAgent #Importando a classe 'BaseAgent' do arquivo 'base_agent'
+import random #Importando a biblioteca random
 
 class RandomAgent(BaseAgent):
     def __init__(self, id=0, yellow=False, vel_mult=0.3):

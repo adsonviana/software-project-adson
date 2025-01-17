@@ -1,18 +1,18 @@
 #Arquivo com código sobre funcionamento do jogo
 
-import numpy as np
+import numpy as np #Importando a biblioteca numpy
 from gymnasium.spaces import Box
 from rsoccer_gym.Entities import Ball, Frame, Robot
 from rsoccer_gym.ssl.ssl_gym_base import SSLBaseEnv
 from rsoccer_gym.Utils import KDTree
-from utils.Point import Point
-from utils.FixedQueue import FixedQueue
-from utils.ssl.small_field import SSLHRenderField
-from agent import ExampleAgent
-from random_agent import RandomAgent
-import random
-import pygame
-from utils.CLI import Difficulty
+from utils.Point import Point #Importando a classe 'Point' do arquivo 'Point'
+from utils.FixedQueue import FixedQueue #Importando a classe 'FixedQueue' do arquivo 'FixedQueue'
+from utils.ssl.small_field import SSLHRenderField #Importando a classe 'SSLHRenderField' do arquivo 'small_field'
+from agent import ExampleAgent #Importando a classe 'ExampleAgent' do arquivo 'agent'
+from random_agent import RandomAgent #Importando a classe 'RandomAgent' do arquivo 'random_agent'
+import random #Importando a biblioteca random
+import pygame #Importando a biblioteca pygame
+from utils.CLI import Difficulty #Importando a classe 'Difficulty' do arquivo 'CLI'
 
 class SSLExampleEnv(SSLBaseEnv):
     def __init__(self, render_mode="human", difficulty=Difficulty.EASY):
@@ -58,7 +58,9 @@ class SSLExampleEnv(SSLBaseEnv):
         for target in self.targets:
             if target not in self.all_points:
                 self.all_points.push(target)
-                
+
+
+        #Os dois seguintes pontos são provavelmente os locais que vou alterar o código acerca do escolha do caminho:        
         # Visible path drawing control
         for i in self.my_agents:
             self.robots_paths[i].push(Point(self.frame.robots_blue[i].x, self.frame.robots_blue[i].y))

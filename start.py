@@ -1,10 +1,10 @@
 #Arquivo com código que começa e que para o jogo
 
-import gymnasium as gym
+import gymnasium as gym #Importando a biblioteca gymnasium como gym
 import rsoccer_gym
 from gymnasium.envs.registration import register
-from utils.CLI import cli, Difficulty
-import pygame
+from utils.CLI import cli, Difficulty #Importando a classe 'Difficulty' do arquivo 'CLI'
+import pygame #Importando a biblioteca pygame
 
 args = cli()
 

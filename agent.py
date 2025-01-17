@@ -1,7 +1,7 @@
 #Arquivo com características dos robôs
 
-from utils.ssl.Navigation import Navigation
-from utils.ssl.base_agent import BaseAgent
+from utils.ssl.Navigation import Navigation #Importando a classe 'Navegation' do arquivo 'Navegation'
+from utils.ssl.base_agent import BaseAgent #Importando a classe 'BaseAgent' do arquivo 'base_agent'
 
 class ExampleAgent(BaseAgent):
     def __init__(self, id=0, yellow=False):
